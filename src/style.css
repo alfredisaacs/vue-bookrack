@@ -1,0 +1,58 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+
+body {
+  margin: 0;
+  background-color: rgba(245, 235, 218);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.nunito-600 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.oswald-200 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.lnk {
+  @apply px-4 py-2 rounded-md font-bold;
+  &:hover {
+      color: rgba(196,80,55);
+  }
+  &.active {
+      color: rgba(126,32,11);
+      text-decoration: underline;
+  }
+}
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.input {
+  @apply py-2 px-3 rounded border border-gray-400;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md text-white font-bold;
+  background: rgba(126,32,11);
+  &.active {
+      @apply text-white;
+  }
+  &:hover {
+      background: black;
+  }
+}
